@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head >
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="widht=device-widht, initial-scale=1.0">
-<title>Eercici 1</title>
-    </head>
-    <body>
-<h1>Exercici 1</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Móviles</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<body>
+    <header>
+        <h1 id="tit">Tienda de Móviles</h1>
+        <h2>Encuentra el móvil perfecto para ti</h2>
+        <nav id="menu-principal">
+            <ul>
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <article class="casalloguer">
+            <h1>iPhone 15</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone15prohero-202309?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1693086290312" alt="iPhone 15">
+            <p>Precio: $999</p>
+            <p>iphone increible.</p>
+        </article>
+
+        <article class="casalloguer">
+            <h1>iPhone 14</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1693086290654" alt="iPhone 14">
+            <p>Precio: $899</p>
+            <p>iphone increible.</p>
+        </article>
+
+        <article class="casalloguer">
+            <h1>iPhone 13</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone13hero-202309?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1692912410963" alt="iPhone 13">
+            <p>Precio: $799</p>
+            <p> iphone increible.</p>
+        </article>
+
+        <article class="casalloguer">
+            <h1>iPhone SE</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphonese-202203?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1646415838921" alt="iPhone SE">
+            <p>Precio: $899</p>
+            <p>iphone increible.</p>
+        </article>
+
+        <article class="casalloguer">
+            <h1>Adaptador iPhone</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MU7V2_GEO_EMEA?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1544468120362" alt="Adaptador iPhone">
+            <p>Precio: $20</p>
+            <p>iphone adaptador increible.</p>
+        </article>
+
+        <article class="casalloguer">
+            <h1>Cable iPhone</h1>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MU2G3?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1693236163178" alt="Cable iPhone">
+            <p>Precio: $15</p>
+            <p>Cargador de alta calidad.</p>
+        </article>
+    </section>
+<br>
+<br>
+    <div class="formulario-contacto" id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="es">España</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/ferranlopezzv/" target="_blank"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-logotipo-de-icono-de-instagram.png" alt="Instagram"></a>
+        </div>
+        <br>
+        &copy;ferranlopezzv
+        <br>
+    </footer>
+</body>
 </html>
