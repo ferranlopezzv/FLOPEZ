@@ -142,3 +142,15 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+/* estilos.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#imagen-esquinada {
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
