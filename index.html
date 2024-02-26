@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ferran Lopez Index</title>
     <link rel="stylesheet" href="index.css">
-    <title>Ferran Lopez Vidal</title>
 </head>
-
 <body>
+
     <header>
-        <div class="profile">
-            <img src="https://www.abazal.es/wp-content/uploads/EnConstrucion-258x300.png" alt="Ferran Lopez">
-            <h1>Ferran Lopez</h1>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <nav>
-            <a href="exercicis/ex1.html">PROYECTO 1</a>
-            <a href="exercicis/exercici2.html">PROYECTO 2</a>
-            <a href="exercicis/ex3.html">PROYECTO 3</a>
-            <p>tonto</p>
-        </nav>
+        <h1> Ferran Lopez Vidal</h1>
+        <!-- Puedes agregar más información sobre ti aquí -->
     </header>
 
-    <section id="main-content">
-        <div class="content-text">
-            <h2>Bienvenido a mi sitio web</h2>
-            <p>¡Hola! Soy Ferran Lopez, un apasionado de la tecnología y el desarrollo web. Este es mi espacio digital donde comparto mis proyectos y experiencias.</p>
-            <p>Explora los ejercicios para conocer más sobre mis habilidades y proyectos. ¡Espero que disfrutes tu visita!</p>
+    <nav>
+        <div class="menu-list">
+            <a href="#estudios">Estudios</a>
+            <a href="#curriculum">Curriculum</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#html-exercises">Ejercicios HTML</a>
+            <a href="#sobre-ti">Sobre Ti</a>
+            <a href="#contacto">Contacto</a>
         </div>
+    </nav>
 
-        <div class="content-images">
-            <img src="https://www.bitec.es/wp-content/uploads/2022/02/creatividad-web-project-service-bajo-peso-472x383.png" alt="Proyecto 1">
+    <section id="estudios">
+        <!-- Información sobre estudios aquí -->
+    </section>
+
+    <section id="curriculum">
+        <a href="tu_curriculum.pdf" download>Descargar Curriculum en PDF</a>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project-tiles">
+            <!-- Aquí puedes añadir tus proyectos -->
+            <div class="project-tile">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+            </div>
+            <div class="project-tile">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+            </div>
+            <!-- Agrega más proyectos según sea necesario -->
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Ferran Lopez Vidal. Todos los derechos reservados.</p>
-    </footer>
-</body>
+    <section id="html-exercises">
+        <h2>Ejercicios HTML</h2>
+        <div class="exercise-tiles">
+            <div class="exercise-tile">
+                <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/09/10/16312841439914.jpg" alt="Ejercicio 1" style="width: 100%; height: 200px;">
+                <p>Página de tienda de móviles usando pocas cosas.</p>
+                <a href="exercicis/ex1.html">Enlace al ejercicio</a>
+            </div>
+            <div class="exercise-tile">
+                <img src="https://www.mondosonoro.com/wp-content/uploads/2022/04/els-catarres-entrevista.jpg" alt="Ejercicio 2" style="width: 100%; height: 200px;">
+                <p>Página web de grupo musical usando alguna cosa más (NOTA=9).</p>
+                <a href="exercicis/exercici2.html">Enlace al ejercicio</a>
+            </div>
+            <div class="exercise-tile">
+                <img src="https://www.tworeality.com/wp-content/uploads/2015/04/1-video-360-desarollo-aplicaciones-gafas-realidad-virtual-oculus-rift-tworeality-inmersiva-1500x697.jpg" alt="Ejercicio 3" style="width: 100%; height: 200px;">
+                <p>Pagina de imagenes y videos en 360 y de informacion de castelbell .(NO ACABADA)</p>
+                <a href="exercicis/ex3.html">Enlace al ejercicio</a>
+            </div>
+            <div class="exercise-tile">
+                <img src="https://www.mondosonoro.com/wp-content/uploads/2022/04/els-catarres-entrevista.jpg" alt="Ejercicio 2" style="width: 100%; height: 200px;">
+                <p>Página web de grupo musical usando alguna cosa más (NOTA=9).</p>
+                <a href="exercicis/exercici2.html">Enlace al ejercicio</a>
+            </div>
+            <!-- Agrega más ejercicios según sea necesario -->
+        </div>
+    </section>
 
+    <section id="sobre-ti">
+        <!-- Información personal, hobbies, etc. -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post" id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 - Tu Nombre
+    </footer>
+
+    <script src="index.js"></script>
+</body>
 </html>
