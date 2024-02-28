@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #333; /* Negro */
+    color: #fff; /* Blanco */
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('tu_imagen.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tu_imagen.jpg') center/cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -35,7 +35,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #333; /* Negro */
     z-index: 1000;
     display: flex;
     justify-content: space-around;
@@ -50,26 +50,35 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #555; /* Gris oscuro */
 }
 
 section {
     padding: 20px;
     margin-top: 70px;
-    background-color: #fff;
+    background-color: #f7f7f7; /* Gris claro */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
-    color: #333;
+    color: #333; /* Gris oscuro */
 }
 
 h2 {
-    color: #333;
+    color: #333; /* Gris oscuro */
 }
 
 .about-me {
     max-width: 800px;
     margin: 0 auto;
+    background-color: #fff; /* Blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Transición para el efecto de aumento */
+}
+
+.about-me:hover {
+    transform: scale(1.05); /* Aumenta al pasar el ratón */
 }
 
 .photo-grid {
@@ -107,8 +116,8 @@ h2 {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Negro */
+    color: #fff; /* Blanco */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -122,8 +131,8 @@ form {
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Negro */
+    color: #fff; /* Blanco */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -132,7 +141,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Gris oscuro */
 }
 
 .contact-info {
@@ -159,8 +168,8 @@ button:hover {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #333;
-        border-bottom: 2px solid #555;
+        background-color: #333; /* Negro */
+        border-bottom: 2px solid #555; /* Gris oscuro */
     }
 
     nav.show {
