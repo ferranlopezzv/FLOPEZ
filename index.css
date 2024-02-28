@@ -67,6 +67,24 @@ h2 {
     color: #333;
 }
 
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.photo-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo-grid img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
 .project-tiles, .exercise-tiles {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +93,8 @@ h2 {
 }
 
 .project-tile, .exercise-tile {
-    width: 30%;
+    width: calc(33.3333% - 20px);
+    margin-right: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -116,6 +135,18 @@ button:hover {
     background-color: #555;
 }
 
+.contact-info {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -144,5 +175,15 @@ button:hover {
 
     section {
         margin-top: 20px;
+    }
+
+    .about-me, .photo-grid {
+        margin-top: 10px;
+    }
+
+    .project-tile, .exercise-tile {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
