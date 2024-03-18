@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Number</title>
+</head>
+<body>
+
+<script>
+// Genera un número aleatorio del 1 al 4
+let aleatori = Math.trunc((Math.random() * 4) + 1);
+
+// Pide al usuario que piense en un número del 1 al 4
+let numeroUsuari = prompt("Pensa en un número del 1 al 4:");
+
+// Compara el número del usuario con el número aleatorio
+if (parseInt(numeroUsuari) === aleatori) {
+    // Si el número del usuario coincide con el número aleatorio, muestra un mensaje de acierto
+    alert("Felicitats! Has encertat el número!");
+} else {
+    // Si no coincide, muestra un mensaje de fallo y el número aleatorio
+    alert("Ho sento, has fallat. El número aleatori era: " + aleatori);
+}
+</script>
+
+</body>
+</html>
